@@ -1,0 +1,136 @@
+{
+  "ipcMode": null,
+  "executionRoleArn": "arn:aws:iam::835108633311:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "dnsSearchDomains": null,
+      "environmentFiles": null,
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "secretOptions": null,
+        "options": {
+          "awslogs-group": "/ecs/mamoru-back-end-task",
+          "awslogs-region": "ap-northeast-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
+      "entryPoint": null,
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "hostPort": 3000,
+          "protocol": "tcp"
+        }
+      ],
+      "command": null,
+      "linuxParameters": null,
+      "cpu": 0,
+      "environment": [],
+      "resourceRequirements": null,
+      "ulimits": null,
+      "dnsServers": null,
+      "mountPoints": [],
+      "workingDirectory": null,
+      "secrets": [
+        {
+          "name": "NODE_ENV",
+          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:NODE_ENV::"
+        },
+        {
+          "name": "DATABASE_HOST",
+          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:DATABASE_HOST::"
+        },
+        {
+          "name": "DATABASE_PORT",
+          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:DATABASE_PORT::"
+        },
+        {
+          "name": "DATABASE_NAME",
+          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:DATABASE_NAME::"
+        },
+        {
+          "name": "DATABASE_USER",
+          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:DATABASE_USER::"
+        },
+        {
+          "name": "DEFAULT_ADMIN_EMAIL",
+          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:DEFAULT_ADMIN_EMAIL::"
+        },
+        {
+          "name": "DEFAULT_ADMIN_PASSWORD",
+          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:DEFAULT_ADMIN_PASSWORD::"
+        },
+        {
+          "name": "COOKIE_PASSWORD",
+          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:COOKIE_PASSWORD::"
+        },
+        {
+          "name": "SESSION_SECRET",
+          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:SESSION_SECRET::"
+        },
+        {
+          "name": "AMAZON_SES_REGION",
+          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:AMAZON_SES_REGION::"
+        },
+        {
+          "name": "AMAZON_SES_IDENTITY",
+          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:AMAZON_SES_IDENTITY::"
+        },
+        {
+          "name": "AMAZON_COGNITO_REGION",
+          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:AMAZON_COGNITO_REGION::"
+        },
+        {
+          "name": "AMAZON_COGNITO_USER_POOL_ID",
+          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:AMAZON_COGNITO_USER_POOL_ID::"
+        },
+        {
+          "name": "AMAZON_COGNITO_CLIENT_ID",
+          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:AMAZON_COGNITO_CLIENT_ID::"
+        },
+        {
+          "name": "CORS_ORIGIN",
+          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:CORS_ORIGIN::"
+        }
+      ],
+      "dockerSecurityOptions": null,
+      "memory": null,
+      "memoryReservation": null,
+      "volumesFrom": [],
+      "stopTimeout": null,
+      "image": "node:16-alpine",
+      "startTimeout": null,
+      "firelensConfiguration": null,
+      "dependsOn": null,
+      "disableNetworking": null,
+      "interactive": null,
+      "healthCheck": null,
+      "essential": true,
+      "links": null,
+      "hostname": null,
+      "extraHosts": null,
+      "pseudoTerminal": null,
+      "user": null,
+      "readonlyRootFilesystem": null,
+      "dockerLabels": null,
+      "systemControls": null,
+      "privileged": null,
+      "name": "mamoru-back-end-container"
+    }
+  ],
+  "placementConstraints": [],
+  "memory": "512",
+  "taskRoleArn": "arn:aws:iam::835108633311:role/ecsTaskExecutionRole",
+  "family": "mamoru-back-end-task",
+  "pidMode": null,
+  "requiresCompatibilities": ["FARGATE"],
+  "networkMode": "awsvpc",
+  "runtimePlatform": {
+    "operatingSystemFamily": "LINUX",
+    "cpuArchitecture": null
+  },
+  "cpu": "256",
+  "inferenceAccelerators": null,
+  "proxyConfiguration": null,
+  "volumes": []
+}
