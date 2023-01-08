@@ -31,68 +31,7 @@
       "dnsServers": null,
       "mountPoints": [],
       "workingDirectory": null,
-      "secrets": [
-        {
-          "name": "NODE_ENV",
-          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:NODE_ENV::"
-        },
-        {
-          "name": "DATABASE_HOST",
-          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:DATABASE_HOST::"
-        },
-        {
-          "name": "DATABASE_PORT",
-          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:DATABASE_PORT::"
-        },
-        {
-          "name": "DATABASE_NAME",
-          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:DATABASE_NAME::"
-        },
-        {
-          "name": "DATABASE_USER",
-          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:DATABASE_USER::"
-        },
-        {
-          "name": "DEFAULT_ADMIN_EMAIL",
-          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:DEFAULT_ADMIN_EMAIL::"
-        },
-        {
-          "name": "DEFAULT_ADMIN_PASSWORD",
-          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:DEFAULT_ADMIN_PASSWORD::"
-        },
-        {
-          "name": "COOKIE_PASSWORD",
-          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:COOKIE_PASSWORD::"
-        },
-        {
-          "name": "SESSION_SECRET",
-          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:SESSION_SECRET::"
-        },
-        {
-          "name": "AMAZON_SES_REGION",
-          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:AMAZON_SES_REGION::"
-        },
-        {
-          "name": "AMAZON_SES_IDENTITY",
-          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:AMAZON_SES_IDENTITY::"
-        },
-        {
-          "name": "AMAZON_COGNITO_REGION",
-          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:AMAZON_COGNITO_REGION::"
-        },
-        {
-          "name": "AMAZON_COGNITO_USER_POOL_ID",
-          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:AMAZON_COGNITO_USER_POOL_ID::"
-        },
-        {
-          "name": "AMAZON_COGNITO_CLIENT_ID",
-          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:AMAZON_COGNITO_CLIENT_ID::"
-        },
-        {
-          "name": "CORS_ORIGIN",
-          "valueFrom": "arn:aws:secretsmanager:ap-northeast-1:835108633311:secret:prod/mamoru-3tAbPX:CORS_ORIGIN::"
-        }
-      ],
+      "secrets": [],
       "dockerSecurityOptions": null,
       "memory": null,
       "memoryReservation": null,
