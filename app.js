@@ -6,6 +6,7 @@ import seedRouter from './routes/seedRoutes.js';
 import productRouter from './routes/productRoutes.js';
 import userRouter from './routes/userRoutes.js';
 import orderRouter from './routes/orderRoutes.js';
+// import secret from './secret-manager.js';
 
 dotenv.config();
 
@@ -27,10 +28,10 @@ app.use(cors({
 }))
 
 app.get('/', (req, res) => {
-  res.send("Home page");
+  res.send(process.env.MONGODB_URI);
 })
 app.get('/api', (req, res) => {
-  res.send("Hello Geek");
+  res.send(process.env.CORS_ORIGIN);
 })
 
 app.use('/api/seed', seedRouter);
